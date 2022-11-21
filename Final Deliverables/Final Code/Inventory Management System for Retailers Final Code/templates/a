@@ -1,0 +1,163 @@
+conn = ibm_db.connect("DATABASE=bludb;HOSTNAME=ea286ace-86c7-4d5b-8580-3fbfa46b1c66.bs2io90l08kqb1od8lcg.databases.appdomain.cloud;PORT=31505;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=mfb71612;PWD=mFTq4HCfJpkesNCD",'','')
+
+     <main id="main" class="main">
+
+      <div class="pagetitle">
+        <h1>Dashboard</h1><br>
+       
+  
+      <section class="section dashboard">
+        <div class="row">
+  
+          <!-- Left side columns -->
+          <div class="col-lg-8">
+            <div class="row">
+  
+              <!-- Sales Card -->
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card sales-card">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title">Sales </h5>
+                    <div class="d-flex align-items-center">
+                      <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="bi bi-cart"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>145</h6>
+                        <span class="text-dark small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Sales Card -->
+  
+              <!-- Revenue Card -->
+              <div class="col-xxl-4 col-md-6">
+                <div class="card info-card revenue-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Revenue </h5>
+                    <div class="d-flex align-items-center">
+                      <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="bi bi-currency-dollar"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>$3,264</h6>
+                        <span class="text-dark small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Revenue Card -->
+  
+              <!-- Customers Card -->
+              <div class="col-xxl-4 col-xl-12">
+                <div class="card info-card customers-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Customers </h5>
+                    <div class="d-flex align-items-center">
+                      <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="bi bi-people"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>1244</h6>
+                        <span class="text-dark small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End Customers Card -->
+  
+              <!-- Reports -->
+             
+            </div>
+          </div><!-- End Left side columns -->
+  
+          <!-- Right side columns -->
+          <div class="col-lg-4">
+  
+            <!-- Recent Activity -->
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Recent Activity </h5>
+              </div>
+            </div><!-- End Recent Activity -->
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Reports </h5>
+              </div>
+            </div>
+          </div><!-- End Right side columns -->
+        </div>
+      </section>
+  
+    </main><!-- End #main -->
+
+
+
+
+
+
+
+
+    <!--new-->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="/brands">
+        <i class="bi bi-menu-button-wide"></i><span>Brands</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+    </li><!-- End Components Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="/stores">
+        <i class="bi bi-cart-dash"></i><span>Stores</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+    </li><!-- End Tables Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="/additems">
+        <i class="bi bi-cart-plus"></i><span>Add Products</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+    </li><!-- End Forms Nav -->
+
+   
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-question-square"></i><span>Help</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      
+    </li><!-- End Charts Nav -->
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="pages-login.html">
+        <i class="bi bi-box-arrow-in-left"></i>
+        <span>Logout</span>
+      </a>
+    </li><!-- End Login Page Nav -->
+
+
+
+<!-- 2  -->
+
+
+    <aside id="sidebar" class="sidebar">
+
+      <ul class="sidebar-nav" id="sidebar-nav">
+  
+        <li class="nav-item">
+          <a class="nav-link " href="/dash">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li><!-- End Dashboard Nav -->
+        <li class="nav-heading">Pages</li>
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="/brands">
+            <i class="bi bi-person"></i>
+            <span>Profile</span>
+          </a>
+        </li><!-- End Profile Page Nav -->
+      </ul>
+  
+    </aside><!-- End Sidebar-->

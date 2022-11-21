@@ -1,0 +1,57 @@
+{% extends 'index.html' %}
+{% block head%}<title>Shops</title>{% endblock %}
+{% block shops %} 
+ 
+
+<main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Stores</h1><br>
+      <form class="row g-3 needs-validation" novalidate action = "{{ url_for('shops') }}" method = "POST">
+        <div class="col-12">
+          <label  class="form-add-label">Store-Name</label>
+          <div class="input-group has-validation">
+            <input type="text" name="name" class="form-add-control"  required >                      
+          </div>
+        </div>
+        <div class="col-12">
+            <label  class="form-add-label">Status</label>
+            <div class="input-group has-validation">
+
+              <select id="status" name="status" class="form-add-control">
+                <option value="select">Select</option>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+              </select>                     
+            </div>
+          </div>    
+        <div class="col-12" >
+          <button class="btn btn-outline-dark btn-lg" type="submit" >Add</button>
+        </div>
+       
+      </form>
+
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        {% for row in shops %}
+        <tbody>
+          <tr>
+            <td>{{row["NAME"]}}</td>
+            <td>{{row["Status"]}}</td>
+            <td><button class="btn btn-danger" id="del"><a  href="/delete/{{row['NAME']}}">Delete</a></button></td>
+        </tbody>
+        
+        {% endfor %}
+      </table>
+            
+  </main><!-- End #main -->
+
+{% endblock %}
+  

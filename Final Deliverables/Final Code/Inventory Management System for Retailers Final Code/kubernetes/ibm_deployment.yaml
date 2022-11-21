@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ibm-project
+
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: ibm-project
+  template:
+    metadata:
+      labels:
+        app: ibm-project
+
+    spec:
+      containers:
+        - name: ibm-project-container
+          image: jp.icr.io/ibm-project/yaseen
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP
+
+
+
+
+#apiVerison: apps/v1
+#kind: apiVersion: apps/v1
+#kind: Deployment
+#metadata:
+#  name: YaseenTest
+#spec:
+#  replicas: 3
+#  selector:
+#    matchLabels:
+#      app: YaseenTest
+#  template:
+#    metadata:
+#      labels:
+#        app: YaseenTest
+
+#    spec:
+#      containers:
+#      - name: YaseenTest
+#        image: jp.icr.io/ibm-project/yaseen
+#        ports:
+#        - containerPort: 5000
+#        protocol: TCP

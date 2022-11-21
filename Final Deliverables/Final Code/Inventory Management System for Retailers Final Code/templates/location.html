@@ -1,0 +1,44 @@
+{% extends 'index.html' %}
+{% block head%}<title>Location</title>{% endblock %}
+{% block loc %} 
+ 
+
+<main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Location</h1><br>
+      <form class="row g-3 needs-validation" action = "{{ url_for('location') }}" method = "POST">
+        <div class="col-12">
+          <label  class="form-add-label">Location</label>
+          <div class="input-group has-validation">
+            <input type="text" name="name" class="form-add-control"  required>                      
+          </div>
+        </div>
+              
+        <div class="col-12" >
+          <button class="btn btn-outline-dark btn-lg" type="submit" >Add</button>
+        </div>
+       
+      </form>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        {% for row in location %}
+        <tbody>
+          <tr>
+            <td>{{row["NAME"]}}</td>
+            <td><button class="btn btn-danger" id="del"><a  href="/dellocation/{{row['NAME']}}">Delete</a></button></td>
+        </tbody>
+        
+        {% endfor %}
+      </table>
+
+  </main><!-- End #main -->
+
+{% endblock %}
+  

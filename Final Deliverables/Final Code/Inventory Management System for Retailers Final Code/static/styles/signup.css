@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #F6F6F2
+  }
+.box-2{
+    border-radius:10px; 
+    width:600px;
+    height: 450px;
+    margin-left: 600px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px ;
+    position:absolute;
+}
+ 
+.register{ 
+    padding: 10px 30px;
+   
+}
+.name{
+    margin-top: 10px;
+    font-size: 2em;
+    font-family: Arial Black, sans-serif;
+    color:#388087;
+    margin-left: 200px;
+}
+.user1 label{
+ font-size: 20px;
+ margin-left: 10px;
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ color:rgb(76, 76, 76)
+}
+.pass1 label{
+    font-size: 20px;
+    margin-left: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(76, 76, 76)
+   }
+.user1 input{
+    width: 95%;
+    padding: 7px;
+    margin: 10px 30px 15px 0px;
+    border: none ;
+    outline: none;
+    background: #ecf0f3;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 50px;
+}
+.pass1 input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 30px 30px 0px;
+    border: none ;
+    outline: none;
+    background: #ecf0f3;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 50px;
+ 
+}
+.btnlog {
+    padding:15px 40px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    margin-left: 50px ;
+}
+.btnlog:hover{
+    color: rgb(168, 169, 171);
+}
+.ca {
+    font-size: 18px;
+    border: none;
+    outline:none;
+    background: transparent;
+    text-decoration: none;
+    color: rgb(18, 125, 212);
+    margin-left: 100px;
+    transition: 0.2s;
+}
+
+.ca:hover{
+    color: red;
+    font-size: 20px;
+    transition: 0.2s;
+}
+form h1 {
+    font-size: 30px;
+    color:#388087;
+    font-family:'Poppins', sans-serif;
+    position:relative;
+}
+.logs{
+    width: 40%;
+    height: auto;
+    margin-right: 700px;
+    
+}
